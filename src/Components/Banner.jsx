@@ -1,4 +1,6 @@
-import { FaArrowCircleDown, FaLocationArrow } from "react-icons/fa";
+import { IoArrowForward } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Banner = () => {
     return (
@@ -7,14 +9,14 @@ const Banner = () => {
                 <h1 className="text-3xl font-semibold capitalize text-[#000000]">Find expert Doctors for an In-clinic session here</h1>
                 <div className="flex items-center gap-2">
                   <label className="w-[200px] flex gap-2 items-center border bg-white p-2 rounded-lg">
-                    <FaLocationArrow/>
+                    <FaLocationDot/>
                     <input className="w-full border-none" type="text" placeholder="Select Location" />
-                    <FaArrowCircleDown/>
+                    <IoIosArrowDown size={24}/>
                   </label>
                   <label className="w-[400px] flex gap-2 items-center justify-between border bg-white p-2 rounded-lg">
                     
                     <input className="w-full " type="text" placeholder="eg. Doctor, specialisation, clinic name" />
-                    <FaArrowCircleDown/>
+                    <IoArrowForward size={22}/>
                   </label>
                 </div>
             </div>
