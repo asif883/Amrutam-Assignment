@@ -5,7 +5,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const Details = () => {
     return (
-        <div className="container mx-auto grid grid-cols-2 gap-5">
+        <div className="container mx-auto grid grid-cols-2 gap-5 mb-8">
             <div>
                  {/* A little about me */}
                 <div className="border border-gray-300 rounded-xl ">
@@ -187,29 +187,56 @@ const Details = () => {
                 </div>
             </div>
             {/* right side */}
-            <div className='border-2 border-gray-100 rounded-xl p-6'>
-               <div className='p-2 px-6 flex justify-between border-2 border-gray-100 rounded-xl'>
-                  <h1>Appointment Fee</h1>
-                  <p>699.0</p>
-               </div>
-               <div className='mt-8'>
-                 <h1 className="font-semibold border-b-2 pb-3">Select your mode of session </h1>
-                 <div className='flex items-center justify-around text-center mt-5'>
-                    <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg'>In Clinic <br /> 45min</p>
-                    <p className='font-medium bg-green-50 border border-green-200 px-8 py-3 rounded-lg'>Video <br /> 45min</p>
-                    <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg'>Chat <br /> 10min</p>
-                 </div>
-               </div>
-               <div className='mt-8'>
-                 <h1 className="font-semibold border-b-2 pb-3 flex items-center justify-between">Pick a Time Slot < TbCalendarWeek size={24}/></h1>
-                 <div className='flex items-center justify-around text-center mt-5 border rounded-lg p-4'>
-                    <p className='p-1 border border-black rounded-full '><MdKeyboardArrowLeft/></p>
-                    <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg text-green-900'>Mon, 10oct <br /> <span className='text-red-600'>5 slots</span></p>
-                    <p className='font-medium bg-green-50 border border-green-200 px-8 py-3 rounded-lg text-green-900'>Tue, 11oct <br /><span className=''>11 slots</span></p>
-                    <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg text-green-900'>Wed, 12oct <br /> <span className='text-yellow-400'>17 slots</span></p>
-                    <p className='p-1 border border-black rounded-full'><MdKeyboardArrowRight/></p>
-                 </div>
-               </div>
+            <div>
+                <div className='border border-gray-200 rounded-xl p-6'>
+                <div className='p-2 px-6 flex justify-between border-2 border-gray-100 rounded-xl'>
+                    <h1>Appointment Fee</h1>
+                    <p>699.0</p>
+                </div>
+                <div className='mt-8'>
+                    <h1 className="font-semibold border-b-2 pb-3">Select your mode of session </h1>
+                    <div className='flex items-center justify-around text-center mt-5'>
+                        <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg'>In Clinic <br /> 45min</p>
+                        <p className='font-medium bg-green-50 border border-green-200 px-8 py-3 rounded-lg'>Video <br /> 45min</p>
+                        <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg'>Chat <br /> 10min</p>
+                    </div>
+                </div>
+                <div className='mt-8'>
+                    <h1 className="font-semibold border-b-2 pb-3 flex items-center justify-between">Pick a Time Slot < TbCalendarWeek size={24}/></h1>
+                    <div className='flex items-center justify-around text-center mt-5 border rounded-lg p-4'>
+                        <p className='p-1 border border-black rounded-full '><MdKeyboardArrowLeft/></p>
+                        <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg text-green-900'>Mon, 10oct <br /> <span className='text-red-600'>5 slots</span></p>
+                        <p className='font-medium bg-green-50 border border-green-200 px-8 py-3 rounded-lg text-green-900'>Tue, 11oct <br /><span className=''>11 slots</span></p>
+                        <p className='font-medium border border-gray-200 px-8 py-3 rounded-lg text-green-900'>Wed, 12oct <br /> <span className='text-yellow-400'>17 slots</span></p>
+                        <p className='p-1 border border-black rounded-full'><MdKeyboardArrowRight/></p>
+                    </div>
+                </div>
+                <div className='mt-8'>
+                    <h4 className='font-semibold'>Morning</h4>
+                    <div className='grid gap-4 grid-cols-4 text-center mt-3'>
+                        <p className='border rounded-xl px-5 py-3'>9:15 AM</p>
+                        <p className='border rounded-xl px-5 py-3'>9:00 AM</p>
+                        <p className='border rounded-xl px-5 py-3'>9:45 AM</p>
+                        <p className='border rounded-xl px-5 py-3'>10:15 AM</p>
+                        <p className='border rounded-xl px-5 py-3'>10:45 AM</p>
+                        <p className='border rounded-xl px-5 py-3 bg-[#3A643B] text-white'>11:00 AM</p>
+                    </div>
+                </div>
+                <div className='mt-8'>
+                    <h4 className='font-semibold'>Evening</h4>
+                    <div className='grid gap-4 grid-cols-4 text-center mt-3'>
+                        <p className='border rounded-xl px-5 py-3'>4:15 PM</p>
+                        <p className='border rounded-xl px-5 py-3'>4:00 PM</p>
+                        <p className='border rounded-xl px-5 py-3'>4:45 PM</p>
+                        <p className='border rounded-xl px-5 py-3'>5:15 PM</p>
+                        <p className='border rounded-xl px-5 py-3'>5:45 PM</p>
+                        <p className='border rounded-xl px-5 py-3'>6:00 PM</p>
+                    </div>
+                </div>
+                <div className='mt-8'>
+                    <button className="w-full p-2 bg-[#3A643B] rounded-lg text-white mt-2">Make an Appointment</button>
+                </div>
+                </div>
             </div>
         </div>
     );

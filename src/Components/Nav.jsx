@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
@@ -8,9 +9,9 @@ const Nav = () => {
                      <h1 className="text-2xl text-[#3D6B48] font-bold uppercase">A m r u t a m</h1>
 
                       <ul className="flex items-center gap-8 text-lg font-medium text-[#474747]">
-                        <li>Home</li>
-                        <li className="text-[#3A643B]">Find Doctor</li>
-                        <li>About Us</li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li className="text-[#3A643B]"><Link to='/'>Find Doctor</Link></li>
+                        <li><Link to='/'>About Us</Link></li>
                       </ul>
                 </div>
                 <div className="flex gap-3 items-center">
