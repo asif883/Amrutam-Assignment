@@ -6,7 +6,7 @@ import { MdCurrencyRupee } from "react-icons/md";
 import { Link } from "react-router-dom";
 const DoctorsCard = () => {
     return (
-        <div className="container mx-auto flex items-center justify-center gap-8">
+        <div className="container mx-auto flex items-center justify-center gap-8 min-h-screen">
             <div className="bg-[#FFF7E2] w-[350px] p-8">
                 <div className="flex flex-col items-center justify-center">
                      <div className="relative">
